@@ -1,0 +1,61 @@
+{
+    "name": "sand",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "abort-controller": "^3.0.0",
+        "acorn": "^8.0.4",
+        "acorn-walk": "^8.0.0",
+        "chalk": "^4.1.0",
+        "clipboardy": "^2.3.0",
+        "de4js": "^1.11.4",
+        "deobfuscator": "^1.0.0",
+        "escodegen": "^2.0.0",
+        "express": "^4.17.1",
+        "image-convert": "^0.1.33",
+        "js-yaml": "^4.1.0",
+        "jsdom": "^18.0.0",
+        "node-fetch": "^2.6.5",
+        "pretty-ms": "^7.0.1",
+        "promise.any": "^2.0.2",
+        "puppeteer": "^10.4.0",
+        "terminal-image": "1.2.1",
+        "terminal-kit": "^2.1.8",
+        "uuid": "^8.3.2",
+        "websocket": "^1.0.34",
+        "yargs": "^17.2.1"
+    },
+    "devDependencies": {
+        "electron": "^15.3.1",
+        "grunt": "~0.4.2",
+        "grunt-contrib-uglify": "~0.2.4",
+        "grunt-contrib-watch": "~0.5.3",
+        "uglifyjs-webpack-plugin": "^2.2.0",
+        "webpack": "^5.64.1"
+    },
+    "bin": {
+        "scripts": "build/**/*.js",
+        "assets": "views/**/*",
+        "targets": [
+            "node14-linux-arm64"
+        ],
+        "outputPath": "dist"
+    },
+    "pkg": {
+        "scripts": "src/**/*.js",
+        "assets": [
+            "main",
+            "node_modules"
+        ],
+        "targets": [
+            "node14-linux-amd64"
+        ],
+        "outputPath": "dist"
+    }
+}

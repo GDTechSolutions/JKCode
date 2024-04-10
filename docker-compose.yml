@@ -1,0 +1,16 @@
+version: "3.0"
+services:
+    pod:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - 5900:5900
+            - 6080:80
+        environment:
+            - VNC_PASSWORD=pod432420
+            - RESOLUTION=1366x768
+            - TZ=Asia/Kolkata
+        volumes:
+            - /dev/shm:/dev/shm
+            - /app:/app

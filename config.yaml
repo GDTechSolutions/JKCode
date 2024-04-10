@@ -1,0 +1,19 @@
+# username: "9866800304"
+# password: "9866800304"
+#7674048361
+username: "8186974444"
+password: "8186974444"
+slot: "12"
+# vehicle_number: "TS31T1119"
+vehicle_number: "TS30T7029"
+captcha_key: "EJSK44EHUK8VSWE"
+# otp_key: "EZQLC5"
+stockyard:
+    # Stockyard that contains all of the following keywords will be matched 
+    - "kollur"
+timers:
+    # in seconds
+    login_captcha: 21.300
+    login_otp: 30.500
+    booking_page: 122.200
+    booking_page_otp: 30.500
